@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Basic CRUD on UI - localStorage </title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <form id='inputPanel'>
+	<div class='inputBox'><label required>Name: </label><br><input type='text' id='name' required></div>
+	<div class='inputBox'><label>Age: </label><br><input type='number' id='age' required></div>
+	<div class='inputBox'><label>Address: </label><br><input type='text' id='address' required></div>
+	<div class='inputBox'><button id='add-btn'>Insert</button></div>
+</form>
+<!-- <div id='statusBar'></div> -->
+<div id='resultsPanel'>
+	<table id='resultTable'>
+		<tr class='resultHeader'>
+			<th class='srC'>SR</th>
+			<th class='nameC'>Name</th>
+			<th class='ageC'>Age</th>
+			<th class='addressC' colspan=2>Address</th>
+		</tr>
+		<tr><th colspan='5'><hr></th></tr>
+	</table>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
